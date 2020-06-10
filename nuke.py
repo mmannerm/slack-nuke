@@ -8,7 +8,7 @@ with open("config.yml", "r") as configfile:
   cfg = yaml.load(configfile, Loader=yaml.BaseLoader)
 
 f = is_not_pinned()
-before = a_while_ago(days=13)
+before = a_while_ago(days=7)
 
 for token in cfg["tokens"]:
   s = SlackCleaner(token)
